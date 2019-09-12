@@ -1,0 +1,149 @@
+html, body {
+  min-height: 100vh;
+  font-family: 'roboto', sans-serif
+}
+
+p {
+  font-size: 16px;
+}
+
+#logo-small {
+  width: 40px;
+  height: auto;
+  transition: width 0.5s;
+}
+
+#logo-big {
+  max-width: 100%;
+  height: auto;
+}
+
+#header {
+  font-family: 'Lexend Giga', sans-serif;
+  color: rgb(92, 122, 213);
+  font-size: 32px;
+  transition: font-size 0.3s;
+  text-decoration: none;
+}
+
+.hero-img {
+  background-image: url("./assets//images/hero-img-demo.jpg");
+  min-height: 30vh;
+  width: 100%;
+  background-attachment: scroll;
+  background-size: 105%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hero-text {
+  width: 80%;
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.nav-trans {
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  border-bottom: 3px solid rgb(92, 122, 213);
+}
+
+.bg-white {
+  background: white;
+}
+
+.bg-purple {
+  background: rgba(92, 122, 213, 1);
+  color: white;
+}
+
+.bg-dark-purple {
+  background: #7B5CD5;
+  color: white;
+}
+
+.bg-blue {
+  background: #5cb7d5;
+  color: white;
+}
+
+.text-purple {
+  color: rgb(92, 122, 213) !important;
+}
+
+.header-bar {
+  height: 3px;
+  max-width: 300px;
+  margin: 0 auto;
+  background: white;
+}
+
+.dropdown-menu{
+  position:absolute;
+}
+
+.contact-img {
+  background: gray;
+  border: 1px solid black;
+  height: 200px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.border-b {
+  border-bottom: 1px;
+  border-color: black;
+}
+
+/* Googlemaps */
+.mapouter {
+  position: relative;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  max-height: 60vh;
+  
+}
+
+
+/* Animate and customize nav-pills */
+.nav-link {
+  transition: color 0.25s;
+  position: relative;
+}
+
+a.nav-link::before
+{
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.nav-link::before {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+}
+
+.nav-link.active::before {
+  border-bottom-color: rgba(92, 122, 213, 1);
+  width: 100%;
+  height: 100%;
+  transition: width 0.25s ease-out;
+}
+
+.nav-link.active {
+  color: rgba(92, 122, 213, 1) !important;
+  background: none !important;
+  border-radius: 0 !important;
+}
