@@ -7,6 +7,10 @@ p {
   font-size: 16px;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 #logo-small {
   width: 40px;
   height: auto;
