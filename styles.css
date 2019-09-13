@@ -7,10 +7,6 @@ p {
   font-size: 16px;
 }
 
-.hidden {
-  visibility: hidden;
-}
-
 #logo-small {
   width: 40px;
   height: auto;
@@ -151,3 +147,7 @@ a.nav-link::before
   background: none !important;
   border-radius: 0 !important;
 }
+
+  .hidden {
+    visibility: hidden; 
+  }
