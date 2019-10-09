@@ -13,11 +13,6 @@ p {
   transition: width 0.5s;
 }
 
-#logo-big {
-  max-width: 100%;
-  height: auto;
-}
-
 #header {
   font-family: 'Lexend Giga', sans-serif;
   color: rgb(92, 122, 213);
@@ -111,6 +106,11 @@ p {
   
 }
 
+.staff-img {
+  max-width: 489px;
+  border-radius: 5px;
+}
+
 
 /* Animate and customize nav-pills */
 .nav-link {
@@ -148,6 +148,10 @@ a.nav-link::before
   border-radius: 0 !important;
 }
 
-  .hidden {
-    visibility: hidden; 
-  }
+.blockquote {
+  font-size: 30px;
+}
+
+.hidden {
+  visibility: hidden; 
+}
