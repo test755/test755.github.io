@@ -6,6 +6,6 @@ const bMobile =   // will be true if running on a mobile device
 
 if (!bMobile) {
   const sheet = document.createElement("style")
-  sheet.innerHTML = ".hide-js {visibility: hidden}";
-  document.body.appendChild(sheet);
+  sheet.innerHTML = ".hide-js {visibility: hidden}"
+  document.body.appendChild(sheet)
 }
