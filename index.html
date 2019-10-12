@@ -20,12 +20,20 @@
   <script src="https://kit.fontawesome.com/7fab744668.js"></script>
   <!-- Scrollreveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Hide sections for scrollreveal -->
+  <noscript>
+    <style type="text/css">
+      .hidden {
+        visibility: visible;
+      }
+    </style>
+  </noscript>
   <title>Neofysio</title>
 </head>
 
-<body data-spy="scroll" data-target="#navbar" data-offset="150" class="">
-  <div id="home"></div>
-  <nav class="navbar nav navbar-expand-lg bg-white navbar-light sticky-top nav-trans slide-down-slow" id="navbar">
+<body data-spy="scroll" data-target="#navbar" data-offset="150">
+  <nav class="navbar nav navbar-expand-lg bg-white navbar-light sticky-top nav-trans slide-down-slow hidden"
+    id="navbar">
     <a class="navbar-brand text-purple" href="#">
       <img src="./assets/logo/neo_kissa.jpeg" width="30" height="30" class="d-inline-block align-top"
         alt="logo of neofysio">
@@ -58,7 +66,7 @@
   </nav>
 
   <div class="container-fluid">
-    <div class="row slide-up-slow justify-content-center">
+    <div class="row slide-up-slow justify-content-center hidden" id='home'>
       <div class="col-sm-12 col-lg-6 pt-3">
         <img src="./assets/logo/neofysio_logo.jpeg" class="w-50 pb-3 d-block mx-auto" alt="neofysio logo">
         <p>
@@ -75,7 +83,7 @@
         </p>
       </div>
       <div class="col-sm-12 col-lg-6 text-center lead px-0">
-        <img src="./assets/images/inside_minified.jpg" class="w-100" alt="neofysio room">
+        <img src="./assets/images/neofysio_inside.jpg" class="w-100" alt="neofysio room">
         <p class="small">
           Vastaanottomme hoitotila on raikas ja rauhallinen.
         </p>
@@ -90,7 +98,7 @@
     </div>
 
     <!-- Services -->
-    <div class="row slide-up-slow bg-blue pt-5" id="services">
+    <div class="row slide-up-slow bg-blue pt-5 hidden" id="services">
       <div class="col">
         <h1 class="slide-down-fast pb-3">Palvelut <i class="fas fa-heart fa-lg text-purple"></i></h1>
         <div class="row">
@@ -145,7 +153,7 @@
     </div>
 
     <!-- Staff -->
-    <div class="row slide-up-slow bg-dark-purple py-5" id="staff">
+    <div class="row slide-up-slow bg-dark-purple py-5 hidden" id="staff">
       <div class="col-12">
         <h1 class="slide-left text-center">Henkilökunta <i class="fas fa-user-friends"></i></h1>
         <div class="header-bar mb-5"></div>
@@ -157,7 +165,7 @@
             <h2 class="text-center d-sm-none">
               Helena Iskala
             </h2>
-            <img class="w-100 mx-auto d-block staff-img" src="./assets/images/helena_minified.jpg"
+            <img class="w-100 mx-auto d-block staff-img" src="./assets/images/helena_iskala.jpg"
               alt="fysioterapeutti Helena Iskala" srcset="">
           </div>
           <div class="col-sm">
@@ -208,7 +216,7 @@
             <h2 class="text-center d-sm-none">
               Anne Schauman
             </h2>
-            <img class="w-100 mx-auto d-block staff-img" src="./assets/images/helena_minified.jpg"
+            <img class="w-100 mx-auto d-block staff-img" src="./assets/images/anne_schauman.jpg"
               alt="fysioterapeutti Helena Iskala" srcset="">
           </div>
 
@@ -259,7 +267,7 @@
 
 
     <!-- Pricing -->
-    <div class="row slide-up-slow pt-5" id="pricing">
+    <div class="row slide-up-slow pt-5 hidden" id="pricing">
       <div class="col-sm">
         <div>
           <h1 class="slide-left">Hinnasto</h1>
@@ -338,7 +346,7 @@
       </div>
     </div>
 
-    <div class="row slide-up-slow mt-5 bg-purple" id="contact">
+    <div class="row slide-up-slow mt-5 bg-purple hidden" id="contact">
       <div class="col-sm">
         <div class="text-center mt-3">
           <h1 class="slide-left">Yhteystiedot</h1>
@@ -369,7 +377,7 @@
     </div>
     <div class="row slide-up-slow bg-dark-purple">
       <div class="col-md-4 px-0">
-        <img src="./assets/images/toolonhovi_minified.jpg" class="w-100" alt="neofysio staff">
+        <img src="./assets/images/neofysio_outside.jpg" class="w-100" alt="neofysio staff">
       </div>
       <div class="col-md-8 px-0">
         <div class="mapouter">
@@ -382,7 +390,7 @@
         </div>
       </div>
     </div>
-    <footer class="page-footer slide-up-slow">
+    <footer class="page-footer" id="footer">
       <div class="row footer bg-dark-purple">
         <div class="col text-center">
           <div class="footer-copyright small text-center py-3">
