@@ -21,18 +21,12 @@
   <!-- Scrollreveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
   <!-- Hide sections for scrollreveal -->
-  <noscript>
-    <style type="text/css">
-      .hidden {
-        visibility: visible;
-      }
-    </style>
-  </noscript>
+  <script src="./hideSections.js" defer></script>
   <title>Neofysio</title>
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="150">
-  <nav class="navbar nav navbar-expand-lg bg-white navbar-light sticky-top nav-trans slide-down-slow hidden"
+  <nav class="navbar nav navbar-expand-lg bg-white navbar-light sticky-top nav-trans slide-down-slow hide-js"
     id="navbar">
     <a class="navbar-brand text-purple" href="#">
       <img src="./assets/logo/neo_kissa.jpeg" width="30" height="30" class="d-inline-block align-top"
@@ -66,7 +60,7 @@
   </nav>
 
   <div class="container-fluid">
-    <div class="row slide-up-slow justify-content-center hidden" id='home'>
+    <div class="row slide-up-slow justify-content-center hide-js" id='home'>
       <div class="col-sm-12 col-lg-6 pt-3">
         <img src="./assets/logo/neofysio_logo.jpeg" class="w-50 pb-3 d-block mx-auto" alt="neofysio logo">
         <p>
@@ -98,7 +92,7 @@
     </div>
 
     <!-- Services -->
-    <div class="row slide-up-slow bg-blue pt-5 hidden" id="services">
+    <div class="row slide-up-slow bg-blue pt-5 hide-js" id="services">
       <div class="col">
         <h1 class="slide-down-fast pb-3">Palvelut <i class="fas fa-heart fa-lg text-purple"></i></h1>
         <div class="row">
@@ -153,7 +147,7 @@
     </div>
 
     <!-- Staff -->
-    <div class="row slide-up-slow bg-dark-purple py-5 hidden" id="staff">
+    <div class="row slide-up-slow bg-dark-purple py-5 hide-js" id="staff">
       <div class="col-12">
         <h1 class="slide-left text-center">Henkilökunta <i class="fas fa-user-friends"></i></h1>
         <div class="header-bar mb-5"></div>
@@ -267,7 +261,7 @@
 
 
     <!-- Pricing -->
-    <div class="row slide-up-slow pt-5 hidden" id="pricing">
+    <div class="row slide-up-slow pt-5 hide-js" id="pricing">
       <div class="col-sm">
         <div>
           <h1 class="slide-left">Hinnasto</h1>
@@ -346,7 +340,7 @@
       </div>
     </div>
 
-    <div class="row slide-up-slow mt-5 bg-purple hidden" id="contact">
+    <div class="row slide-up-slow mt-5 bg-purple hide-js" id="contact">
       <div class="col-sm">
         <div class="text-center mt-3">
           <h1 class="slide-left">Yhteystiedot</h1>
@@ -412,7 +406,7 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="./index.js"></script>
-  <script src="./scrollReveal.js"></script>
+  <script src="./scrollReveal.js" defer></script>
 </body>
 
 </html>
