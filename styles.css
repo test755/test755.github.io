@@ -80,14 +80,6 @@ p {
   position:absolute;
 }
 
-.contact-img {
-  background: gray;
-  border: 1px solid black;
-  height: 200px;
-  margin: 0 auto;
-  width: 50%;
-}
-
 .border-b {
   border-bottom: 1px;
   border-color: black;
@@ -96,14 +88,13 @@ p {
 /* Googlemaps */
 .mapouter {
   position: relative;
+  height: 100%;
+  min-height: 385px;
 }
 
 .gmap_canvas {
-  
   background: none !important;
-  height: 600px;
-  max-height: 100vh;
-
+  height: 100%;
 }
 
 .staff-img {
@@ -111,6 +102,12 @@ p {
   border-radius: 5px;
 }
 
+.contact-img {
+  width: auto;
+  max-height: 500px;
+  margin: auto;
+  display: block;
+}
 
 /* Animate and customize nav-pills */
 .nav-link {
