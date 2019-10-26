@@ -1,7 +1,15 @@
-const slideUpSlow = {
+const slideUpSlowO = {
   distance: '5%',
   origin: 'bottom',
   opacity: 0,
+  mobile: false,
+  duration: 1000
+}
+
+const slideUpSlow = {
+  distance: '5%',
+  opacity: 1,
+  origin: 'bottom',
   mobile: false,
   duration: 1000
 }
@@ -29,6 +37,7 @@ const slideDownFast = {
   duration: 1000
 }
 
+ScrollReveal().reveal('.slide-up-slow-o', slideUpSlowO)
 ScrollReveal().reveal('.slide-up-slow', slideUpSlow)
 ScrollReveal().reveal('.slide-down-slow', slideDownSlow)
 ScrollReveal().reveal('.slide-left', slideLeft)
